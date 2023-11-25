@@ -57,12 +57,79 @@
 }
 
 /*-------------------------------------*/
-main {
-  background-color: green;
-  height: 20px;
-  max-width: 1440px;
+
+
+.cover { /*вся секция*/
+  display: flex;
+  width: 1440px;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  position: relative;
+  z-index: -1;
 }
 
+.overlay { /*полупрозрачный блок поверх секции*/
+    position: absolute; 
+    inset: 0;
+    height: 757px;
+    width: 1440px;
+    z-index: 10;
+    opacity: 0.6;
+    background-color: #000;
+}
+
+.cover__title { /*заголовок*/
+  display: block;
+  position: relative; 
+  z-index: 1;
+}
+
+.aligned-text { /*классы для выравнивания строк текста и превращения 
+  их в блочный элемент;*/
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.aligned-text_center { /*классы для выравнивания строк текста и 
+  превращения их в блочный элемент;*/
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.aligned-text_right { /*классы для выравнивания строк текста и 
+  превращения их в блочный элемент;*/
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.letter-spacing-extended { /*класс для управления межбуквенным 
+  расстоянием в местах, где есть эти акценты;*/
+  position: relative;
+  font-weight: 700;
+
+}
+
+.no-letter-spacing { /*класс для обнуления общего межбуквенного 
+  расстояния для последней буквы*/
+
+}
+
+.cover__description { /*контейнер для подзаголовка и кнопки*/
+
+}
+
+.cover__description-text { /*текст подзаголовка*/
+
+}
+
+.bet-button { /*кнопка «Сделать ставку»*/
+
+}
 .pixel-perfect-image {
   position: fixed;
   width: 1440px;
