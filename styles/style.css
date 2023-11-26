@@ -79,7 +79,7 @@
   opacity: 0.6;
   background-color: #000;
 }
-
+/*-----------------------------------------------------------------*/
 .cover__title {
   /*заголовок*/
   display: flex;
@@ -127,7 +127,7 @@
 .aligned-text_right {
   /*классы для выравнивания строк текста и 
   превращения их в блочный элемент;*/
-  margin: 0 50px;
+  margin: 0 50px 135px;
   line-height: 100%; /* 100px */
   display: block;
   letter-spacing: 31px;
@@ -138,26 +138,106 @@
   расстоянием в местах, где есть эти акценты;*/
   padding-left: 921px;
   letter-spacing: 61px;
-
 }
-
 
 .no-letter-spacing {
   /*класс для обнуления общего межбуквенного 
   расстояния для последней буквы*/
 }
 
+/*--------------------------------------------------------------*/
 .cover__description {
   /*контейнер для подзаголовка и кнопки*/
+  display: flex;
+  margin: 0 50px 50px 422px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .cover__description-text {
   /*текст подзаголовка*/
+  z-index: 2;
+  color: #FFF;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 17px;
+  padding-top: 13px;
 }
 
-.bet-button {
-  /*кнопка «Сделать ставку»*/
+.bet-button { /*кнопка «Сделать ставку»*/
+  width: 258px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  padding: 12px 32px;
+  font-size: 22px;
+  text-transform: uppercase;
+  z-index: 2;
 }
+/*--------------------------------------------------------------*/
+
+.lots { /* вся секция */
+  display: flex;
+  margin: 180px 50px;
+  background-color: grey;
+  height: 579px;
+}
+.lots__heading {/* заголовок секции*/
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 47px;
+  margin-left: 40px;
+}
+.lots__card-list { /* список карточек;*/
+  display: flex;
+  margin-top: 74px;
+  margin-bottom: 55px;
+  background-color: yellowgreen;
+  gap: 25px;
+  list-style-type: none;
+}
+
+.lots__card-list-item { /* пункт списка карточки;*/
+  display: block;
+  width: 430px;
+  height: 450px;
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.card-link { /* ссылка, обрамляющая карточку;*/
+  
+} 
+
+.card { /* карточка;*/
+
+}
+
+.card_type_film .card_type_book .card_type_picture /* классы, чтобы задать 
+определённый фон каждой из карточек;*/
+
+.overlay { /* он уже есть у вас в коде;*/
+
+}
+.card__title { /* заголовок карточки;*/
+
+}
+.card__text { /* текст карточки;*/
+
+}
+.lots__look-more-link { /* ссылка «Посмотреть больше».*/
+
+}
+
+
+
+
+
+
+
 .pixel-perfect-image {
   position: fixed;
   width: 1440px;
