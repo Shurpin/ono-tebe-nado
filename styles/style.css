@@ -71,10 +71,11 @@
 
 .overlay {
   /*полупрозрачный блок поверх секции*/
+  display: block;
   position: absolute;
   inset: 0;
-  height: 757px;
-  width: 1440px;
+  height: 100%;
+  width: 100%;
   z-index: 1;
   opacity: 0.6;
   background-color: #000;
@@ -176,13 +177,14 @@
 }
 /*--------------------------------------------------------------*/
 
-.lots { /* вся секция */
-  display: flex;
+
+
+
+.lots {
   margin: 180px 50px;
-  background-color: grey;
-  height: 579px;
 }
-.lots__heading {/* заголовок секции*/
+
+.lots__heading {
   color: #000;
   font-size: 40px;
   font-weight: 700;
@@ -190,45 +192,71 @@
   height: 47px;
   margin-left: 40px;
 }
-.lots__card-list { /* список карточек;*/
+
+.lots__card-list { 
   display: flex;
-  margin-top: 74px;
-  margin-bottom: 55px;
-  background-color: yellowgreen;
   gap: 25px;
   list-style-type: none;
+  margin-top: 27px;
+  margin-bottom: 30px;
 }
 
-.lots__card-list-item { /* пункт списка карточки;*/
-  display: block;
+.lots__card-list-item { 
+  flex-grow: 1;
+
+  }
+
+.card-link {
+ display: block;
+ text-decoration: none;
+} 
+.card { 
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: 430px;
   height: 450px;
-  background-image: url(../images/card-lot-01.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  z-index: -2;
+  padding: 50px 40px;
 }
 
-.card-link { /* ссылка, обрамляющая карточку;*/
-  
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
 } 
 
-.card { /* карточка;*/
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
 
 }
-
-.card_type_film .card_type_book .card_type_picture /* классы, чтобы задать 
-определённый фон каждой из карточек;*/
-
-.overlay { /* он уже есть у вас в коде;*/
-
+.card__title { 
+  display: flex;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%; /* 26.4px */
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  z-index: 2;
 }
-.card__title { /* заголовок карточки;*/
-
+.card__text { 
+  display: flex;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  z-index: 2;
+  flex-grow: 1;
+  align-items: flex-end;
 }
-.card__text { /* текст карточки;*/
 
-}
-.lots__look-more-link { /* ссылка «Посмотреть больше».*/
+.lots__look-more-link { 
 
 }
 
