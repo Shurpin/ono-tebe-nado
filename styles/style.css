@@ -332,12 +332,3 @@ text-underline-position: under;
   height: 48px;
   padding-left: 48px;
 }
-
-.pixel-perfect-image {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 1440px;
-  opacity: 0.5;
-  transform: translateX(-50%);
-}
