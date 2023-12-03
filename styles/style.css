@@ -245,7 +245,7 @@ text-underline-position: under;
 .about__column {
   grid-row-start: 1;
   grid-row-end: 4;
-  padding: 0 95px 251px;
+  padding: 0 95px 250px;
 }
 
 .about__logo {
@@ -270,6 +270,9 @@ text-underline-position: under;
 }
 
 .about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
   grid-column-start: 2;
   grid-column-end: 3;
   padding-top: 5px;
@@ -279,10 +282,7 @@ text-underline-position: under;
   line-height: 1.16;
 }
 
-.about__text-second {
-  font-size: 20px;
-  padding-top: 27px;
-}
+
 
 .footer {
   display: grid;
@@ -296,6 +296,7 @@ text-underline-position: under;
   font-size: 18px;
   line-height: 24.3px;
   font-style: normal;
+  max-width: 240px;
 }
 
 .footer__menu {
@@ -331,4 +332,13 @@ text-underline-position: under;
 .footer__social-icon {
   height: 48px;
   padding-left: 48px;
+}
+
+.pixel-perfect-image {
+  position: absolute;
+  width: 1440px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
 }
